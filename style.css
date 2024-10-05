@@ -1,0 +1,132 @@
+@font-face {
+    font-family: italic;
+    src: local("serif");
+    src: url(/font/DMSerifDisplay-Italic.ttf);
+}
+
+
+body {
+    background-color: hsl(40, 100%, 91%);
+    font: normal 'serif';
+}
+
+.all {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.xxx {
+    overflow: hidden;   
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.base {
+    background-color: white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    text-align: right;
+    display: flex;
+    width: 600px;
+
+    width: 600px;
+    height: 45vh;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pay {
+    padding: 16px 100px 16px 100px;
+    border-radius: 10px;
+    background-color: hsl(120, 97%, 13%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 9px 0px 0px 36px;
+}
+
+.pay:hover {
+    cursor: pointer;
+}
+
+
+.price2 {
+    text-decoration: line-through;
+    text-align: right;
+    width: 52px;
+    height: 25px;
+    color: grey;
+
+    display: block;
+
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.price1 {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 33px;
+    margin-bottom: 27px;
+    color: hwb(165 1% 50%);
+
+    width: 120px;
+    height: 35px;
+    
+    overflow: hidden;
+    display: block;
+    -webkit-line-clamp: 2px;
+    -webkit-box-orient: vertical;
+}
+
+.row {
+    display: flex;
+}
+
+.text1 {
+    text-align: right;
+    margin-right: 33px;
+}
+
+.p1 {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: grey;
+}
+
+.p2 {
+    margin-left: 40px;
+    color: gray;
+}
+
+
+
+@media (max-width: 700px) {
+    .base {
+        display: block;
+        text-align: center;
+    }
+    .xxx {
+        display: block;
+        background-image:url("image/image-product-mobile.jpg");
+    }
+}
